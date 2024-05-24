@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 104.44rem;
+  min-height: 64rem;
+  font-family: Space Grotesk, sans-serif;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  margin: 0.5px 0 50px 0;
+  background-color: #6a1039;
+  max-width: 100%;
+  min-height: auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+nav a {
+  color: #ddd;
+  font-weight: 700;
+  font-size: 20px;
+}
+nav a:hover {
+  background-color: #b1a3a3;
+  padding: 5px;
+}
+
+nav .page1,
+nav .page2 {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ddd;
+  font-size: 20px;
+}
+nav .current {
+  background-color: #815555;
+}
+
+/* SIDE MENU */
+.side_menu {
+  max-width: 14.44rem;
+  min-height: 64rem;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.side_menu .logo {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 10px;
+}
+
+.side_menu .logo .logo_name {
+  position: absolute;
+  left: 60px;
+  top: 12px;
+  font-family: Space Grotesk, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  padding-left: 3px;
+}
+
+.side_menus {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 0 0;
+  font-family: Avenir, sans-serif;
+  font-size: 15px;
+}
+
+.side_menus .dashboard,
+.side_menus .roles {
+  display: flex;
+  flex-direction: row;
+  margin: 4px 0 4px 10px;
+  padding-bottom: 2px;
+}
+
+.side_menus .employees {
+  display: flex;
+}
+.side_menus .employees_drpdown .employees-ul {
+  display: flex;
+  flex-direction: column;
+  margin: 18px 0 20px 60px;
+}
+
+.side_menus .payroll,
+.side_menus .reports,
+.side_menus .settings {
+  display: flex;
+  flex-direction: row;
+  margin: 4px 0 4px 10px;
+  padding-bottom: 5px;
+}
+
+/* CENTER MENU */
+.center_menu {
+  max-width: 90rem;
+  min-height: 64rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: -62.5rem;
+  position: relative;
+}
+
+.center_menu .search {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  left: 350px;
+}
+.center_menu .search .search-paragraph {
+  padding-left: 10px;
+}
+.center_menu .menu_setting_img {
+  display: flex;
+  position: absolute;
+  top: 12px;
+  right: 100px;
+}
+
+.center_menu .menu_notification-img {
+  display: flex;
+  position: absolute;
+  top: 12px;
+  right: 60px;
+}
+
+.center_menu .menu_photo-img {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: -5px;
+}
+
+/* CARD HEADER */
+.card_header {
+  max-width: 90rem;
+  min-height: 64rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: -58.5rem;
+  position: relative;
+}
+
+.card_header .employees_p {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  left: 350px;
+}
+
+.card_header .help_icon {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -3px;
+  left: 455px;
+}
+
+.card_header .export {
+  display: flex;
+  position: absolute;
+  top: -3px;
+  right: 160px;
+}
+
+.card_header .new_employee {
+  display: flex;
+  position: absolute;
+  top: -3px;
+  right: -5px;
+}
+
+/* HORIZONTAL TAB */
+.horizontal_tab {
+  max-width: 90rem;
+  min-height: 64rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: -58.5rem;
+  position: relative;
+}
+
+.horizontal_tab .all_employees {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -20px;
+  left: 350px;
+  color: #6a1039;
+  font-weight: 550;
+}
+
+.horizontal_tab .teams {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -20px;
+  left: 480px;
+}
+
+.horizontal_tab .roles {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -20px;
+  left: 550px;
+}
+
+/* SEARCH AND FILTER */
+.search_filter {
+  max-width: 90rem;
+  min-height: 64rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: -58.5rem;
+  position: relative;
+}
+
+.search_filter .search_filter-search {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -50px;
+  left: 350px;
+}
+.search_filter .search_filter-search-paragraph {
+  padding-left: 10px;
+}
+
+.search_filter .filter_button {
+  display: flex;
+  position: absolute;
+  top: -75px;
+  right: 80px;
+}
+
+.search_filter .button_base-icon {
+  display: flex;
+  position: absolute;
+  top: -38px;
+  right: 15px;
+}
+
+.search_filter .filter_icon2 {
+  display: flex;
+  position: absolute;
+  top: -75px;
+  right: -15px;
+}
+
+/* MAIN SECTION */
+.main {
+  max-width: 90rem;
+  min-height: 64rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: -58.5rem;
+  position: relative;
+}
+
+.main_img {
+  display: flex;
+  position: absolute;
+  top: -75px;
+  right: -18px;
+}
